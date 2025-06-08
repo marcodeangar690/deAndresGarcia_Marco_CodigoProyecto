@@ -119,7 +119,7 @@ if (!empty($cart)) {
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col sm:flex-row items-stretch hover:shadow-2xl transition" data-aos="zoom-in">
                         <!-- para ajustar el tamaño de las imagenes en la entrada -->
                         <img src="uploads_eventos/<?= htmlspecialchars($item['imagen']) ?>" alt="<?= htmlspecialchars($item['nombre']) ?>" class="w-full sm:w-48 h-50 sm:h-50 object-cover">
-                        <div class="p-4 sm:p-6 flex-grow flex flex-col justify-between">
+                        <div class="p-4 sm:p-6 flex-grow flex flex-col justify-between min-w-0">
                             <div>
                                 <h2 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2 truncate"><?= htmlspecialchars($item['nombre']) ?></h2>
                                 <p class="text-xs sm:text-sm text-gray-500 mb-1 flex items-center gap-1">
