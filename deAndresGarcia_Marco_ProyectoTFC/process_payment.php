@@ -2,6 +2,8 @@
 session_start();
 require_once "conexion.php";
 
+date_default_timezone_set('Europe/Madrid');
+
 //verificar que el usuario esta logueado, si no redirigir a login
 if (!isset($_SESSION['id_usuario'])) {
     header('Location: login.php');
